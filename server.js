@@ -6,6 +6,14 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
+app.get("/portfolio", (req, res) => {
+  res.sendFile(__dirname + "/portfolio.html");
+});
+
+app.get("/team", (req, res) => {
+  res.sendFile(__dirname + "/team.html");
+});
+
 var options = {
   dotfiles: "ignore",
   etag: false,
