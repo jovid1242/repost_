@@ -14,6 +14,10 @@ app.get("/team", (req, res) => {
   res.sendFile(__dirname + "/team.html");
 });
 
+app.get("/film", (req, res) => {
+  res.sendFile(__dirname + "/film.html");
+});
+
 var options = {
   dotfiles: "ignore",
   etag: false,
